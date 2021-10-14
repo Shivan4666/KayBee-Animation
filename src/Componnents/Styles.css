@@ -1,0 +1,235 @@
+/* .image0 {
+  width: 100%;
+} */
+.image0 {
+  height: 100vh;
+  width: 100%;
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+}
+.image1 {
+  width: 300px;
+  margin-left: 130px;
+  /* height: 100px; */
+  position: absolute;
+  animation-name: example1;
+  animation-duration: 0.7s;
+  /* animation-delay: 2s; */
+  animation-iteration-count: 1;
+  /* animation-fill-mode: forwards; */
+  animation-timing-function: linear;
+  animation: mymove 2s forwards;
+  visibility: hidden;
+}
+@keyframes mymove {
+  from {
+    bottom: 0px;
+  }
+  to {
+    bottom: 100px;
+    /* animation-play-state: running; */
+    animation-play-state: paused;
+    visibility: visible;
+  }
+}
+@keyframes example1 {
+  100% {
+    left: 520px;
+    top: 108px;
+  }
+}
+.image2 {
+  width: 170px;
+  margin-left: 201px;
+  position: absolute;
+  animation-name: example2;
+  animation-duration: 0.7s;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  visibility: hidden;
+}
+@keyframes example2 {
+  100% {
+    left: 340px;
+    top: 0px;
+    visibility: visible;
+  }
+}
+
+.image33 {
+  width: 70px;
+
+  margin-left: 201px;
+  position: absolute;
+  animation-name: example33;
+  animation-duration: 0.7s;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+@keyframes example33 {
+  100% {
+    left: 300px;
+    top: 425px;
+  }
+}
+.image4 {
+  width: 150px;
+  height: 200px;
+  margin-left: 201px;
+  position: absolute;
+  animation-name: example4;
+  animation-duration: 0.7s;
+  animation-delay: 3.3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  visibility: hidden;
+}
+@keyframes example4 {
+  100% {
+    left: 873px;
+    top: 0px;
+    visibility: visible;
+  }
+}
+.image5 {
+  width: 150px;
+  height: 160px;
+  margin-left: 201px;
+  position: absolute;
+  animation-name: example5;
+  animation-duration: 0.7s;
+  animation-delay: 3.6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  visibility: hidden;
+}
+@keyframes example5 {
+  100% {
+    left: 873px;
+    top: 217px;
+    visibility: visible;
+  }
+}
+.image6 {
+  width: 150px;
+  height: 203px;
+  margin-left: 201px;
+  position: absolute;
+  animation-name: example6;
+  animation-duration: 0.7s;
+  animation-delay: 3.9s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  visibility: hidden;
+}
+@keyframes example6 {
+  100% {
+    left: 873px;
+    top: 392px;
+    visibility: visible;
+  }
+}
+.imagebee {
+  width: 30px;
+  left: 921px;
+  position: absolute;
+  top: 240px;
+  /* transform: rotate(45deg) translateX(150px) rotate(-45deg); */
+  animation-name: honeybee;
+  animation-duration: 10s;
+  animation-delay: 4.2s;
+  border-radius: 60px;
+  animation-iteration-count: 1;
+  visibility: hidden;
+
+  /* animation-fill-mode: inherit; */
+}
+@keyframes honeybee {
+  from {
+    transform: rotate(0deg) translateX(150px) rotate(0deg);
+    visibility: visible;
+  }
+  to {
+    transform: rotate(360deg) translateX(270px) rotate(-360deg);
+    /* --path: "M20,20 C20,100 200,0 200,100"; */
+    /* --path: "M40,40 C40,200 400,0 400,200";
+    offset-path: path(var(--path)); */
+    /* --path: "M40,228.75L55.729166666666664,197.29166666666666C71.45833333333333,165.83333333333334,102.91666666666667,102.91666666666667,134.375,102.91666666666667C165.83333333333334,102.91666666666667,197.29166666666666,165.83333333333334,228.75,228.75C260.2083333333333,291.6666666666667,291.6666666666667,354.5833333333333,323.125,354.5833333333333C354.5833333333333,354.5833333333333,386.0416666666667,291.6666666666667,401.7708333333333,260.2083333333333L417.5,228.75"; */
+    /* offset-path: path(var(--path)); */
+    /* offset-path: path("M20,200 C20,100 200,0 200,100"); */
+    /* }
+}
+
+.mover {
+  motion-path: path(
+    "M18.45,58.46s52.87-70.07,101.25-.75,101.75-6.23,101.75-6.23S246.38,5.59,165.33,9.08s-15,71.57-94.51,74.56S18.45,58.46,18.45,58.46Z"
+  );
+  offset-path: path(
+    "M18.45,58.46s52.87-70.07,101.25-.75,101.75-6.23,101.75-6.23S246.38,5.59,165.33,9.08s-15,71.57-94.51,74.56S18.45,58.46,18.45,58.46Z"
+  );
+  motion-rotation: reverse;
+  animation: move 3s linear;
+  animation-iteration-count: 2;
+}
+@keyframes move {
+  100% {
+    motion-offset: 100%;
+    offset-distance: 100%;
+    visibility: visible;
+    /* animation-iteration-count: 10; */
+    /* animation-duration: 5s; */
+  }
+}
+
+.mover {
+  width: 54px;
+  padding: 54px;
+  padding-top: 2px;
+  background-size: cover;
+  align-items: center;
+  border-bottom: -28px;
+  background-size: 61px 46px !important;
+  /* height: 54px; */
+  background: url("./Photos/bee-honey.gif") no-repeat;
+  position: absolute;
+  left: 64%;
+  top: 200px;
+  animation-delay: 4.2s;
+  animation-duration: 5s;
+  visibility: hidden;
+  /* animation: move; */
+  /* offset-rotate: auto 30deg; */
+  /* animation-name: honeybee; */
+  /* animation-duration: 5s;
+  animation-delay: 4.2s;
+  animation-iteration-count: 1; */
+  /* visibility: hidden;
+  /* animation-name: honeybee; 
+
+/* @keyframes honeybee {
+  from {
+    /* transform: rotate(0deg) translateX(150px) rotate(0deg); */
+  /* visibility: visible;
+  } */
+  /* } */
+}
+/* @keyframes honeybee {
+  from{
+    visibility: hidden;
+  }
+  to{
+    visibility: visible;
+  }
+} */
+/* .mover-circle {
+  top: 150px;
+  offset-path: circle(600px at 50px 50px);
+  motion-path: circle(600px at 50px 50px);
+} */
